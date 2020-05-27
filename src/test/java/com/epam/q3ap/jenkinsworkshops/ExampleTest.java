@@ -9,8 +9,9 @@ public class ExampleTest {
   @Test
   void shouldPassWhenRunAndNotModified() {
     // Given
+    String sentence = "To pass test condition should be true, but was false";
     // When
     // Then
-    assertTrue(true, "To pass test condition should be true, but was false");
+    assertTrue(true, sentence);
   }
 }
