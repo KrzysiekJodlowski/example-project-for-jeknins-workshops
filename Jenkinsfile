@@ -1,12 +1,13 @@
 pipeline {
     agent any
     tools {
-            maven 'Maven 3.6.3'
+            maven 'maven:latest'
         }
     stages {
-        stage('build') {
+        stage('env info') {
             steps {
                 bat 'mvn --version'
+                bat 'java -version'
             }
         }
     }
