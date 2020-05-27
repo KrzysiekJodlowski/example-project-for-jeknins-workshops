@@ -10,5 +10,11 @@ pipeline {
                 bat 'java -version'
             }
         }
+        stage('build') {
+             steps {
+                 bat 'mvn compile'
+                 bat 'mvn package'
+             }
+        }
     }
 }
