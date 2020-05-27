@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-            maven 'maven:latest'
+            maven 'Maven 3.6.3'
         }
     stages {
         stage('env info') {
