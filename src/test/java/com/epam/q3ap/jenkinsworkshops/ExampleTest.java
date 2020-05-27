@@ -2,7 +2,6 @@ package com.epam.q3ap.jenkinsworkshops;
 
 import static org.testng.Assert.assertTrue;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ExampleTest {
@@ -13,6 +12,5 @@ public class ExampleTest {
     // When
     // Then
     assertTrue(true, "To pass test condition should be true, but was false");
-    Assert.fail();
   }
 }
