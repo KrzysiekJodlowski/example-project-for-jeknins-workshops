@@ -18,7 +18,7 @@ pipeline {
         }
         stage('sleep') {
              steps {
-                 bat 'sleep(time: 1, unit: 'MINUTES')'
+                 sleep(time: 1, unit: 'MINUTES')
                  bat 'echo Hello world'
              }
         }
